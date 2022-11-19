@@ -1,10 +1,10 @@
 ## Interactive rating
 
-### 1. Get rating value onClick
+### 1. Get rating value on click
 
 `pages/index.js`
 
-Set rating value & id equal to the selected value & id.  
+Set rating value equal to the selected value.  
 
 ```jsx
 import {useState} from "react"
