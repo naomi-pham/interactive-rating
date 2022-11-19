@@ -19,7 +19,7 @@ const SubmitCard = ({rating, isActive, handleClick, handleSubmit}) => {
                     <button 
                         id={number}
                         key={number}
-                        className={`w-12 sm:w-14 circle ${value === number  ? "bg-light text-white" : "bg-accentDark"} hover:bg-light`}
+                        className={`w-12 sm:w-14 circle ${value === number  ? "bg-light text-white" : "bg-accentDark text-light"} hover:bg-light`}
                         value={number}
                         onClick={handleClick}
                     >
