@@ -1,0 +1,13 @@
+.btn {
+    background: hsl(25 97% 53%);
+    padding: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.btn:hover {
+    background: white;
+    color: hsl(25 97% 53%);
+}
+

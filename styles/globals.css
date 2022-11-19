@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;800;900&display=swap");
+@import "./blocks/index.css"; 
+@import "./compositions/index.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 25 97% 53%;
+    --color-white: 0 0% 100%;
+    --color-light: 217 12% 63%;
+    --color-accentLight: 216 12% 54%;
+    --color-accentDark: 213 19% 18%;
+    --color-dark: 216 12% 8%;
+  }
+  h1 {
+    @apply text-5xl font-extrabold lg:text-6xl;
+  }
+  h2 {
+    @apply text-4xl font-bold;
+  }
+  h3 {
+    @apply text-3xl font-bold;
+  }
+  h4 {
+    @apply text-2xl font-bold;
+  }
+  h5 {
+    @apply text-xl font-bold;
+  }
+  p {
+    @apply opacity-60
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.7;
+  background-color: hsl(var(--color-dark) / 100);
+  color: hsl(var(--color-white) / 100);
+}
