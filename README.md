@@ -13,7 +13,6 @@ import {useState} from "react"
 
 const [rating, setRating] = useState({
     value: 5,
-    id: "",
   })
 
 const [isActive, setIsActive] = useState(false)
@@ -21,7 +20,6 @@ const [isActive, setIsActive] = useState(false)
 function handleClick(event) {
   setRating({
       value: event.target.value,
-      id: event.target.id,
     }) 
 }
 
@@ -57,7 +55,6 @@ const ratings = ["1", "2", "3", "4", "5"]
 <div className="card-rating">
     {ratings.map(number => (
         <button 
-            id={number}
             key={number}
             className={`w-12 sm:w-14 circle ${value === number  ? "bg-light text-white" : "bg-accentDark text-light"} hover:bg-light`}
             value={number}
