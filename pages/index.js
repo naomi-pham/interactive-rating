@@ -7,7 +7,6 @@ const Home = () => {
 
   const [rating, setRating] = useState({
     value: 5,
-    id: "",
   })
 
   const [isActive, setIsActive] = useState(false)
@@ -15,7 +14,6 @@ const Home = () => {
   function handleClick(event) {
     setRating({
         value: event.target.value,
-        id: event.target.id,
       }) 
   }
 
@@ -25,9 +23,7 @@ const Home = () => {
     setIsActive(true)
   }
 
-  console.log(rating)
-
-  
+  // console.log(rating)
  
   return (
       <>
